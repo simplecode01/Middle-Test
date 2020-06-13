@@ -112,12 +112,7 @@ public class signup_activity extends AppCompatActivity {
 
                         Log.d("LOG", "REGISTER" + body);
 
-                        adapterBundle =  new Bundle();
-                        adapterBundle.putString("SENT_USERNAME", usr_user);
-                        adapterBundle.putString("SENT_PASSWORD", pwd_user);
-
                         Intent toSignIn =  new Intent(signup_activity.this, signin.class);
-                        toSignIn.putExtras(adapterBundle);
                         startActivity(toSignIn);
                         finish();
                     }else{

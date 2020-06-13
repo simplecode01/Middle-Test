@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Auth.signin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="180pt"
+            android:layout_height="60pt"
+            android:src="@drawable/flooop"/>
+
+        <EditText
+            android:id="@+id/edt_user_login"
+            android:layout_gravity="center"
+            android:padding="5pt"
+            android:background="@drawable/border"
+            android:layout_width="120pt"
+            android:layout_height="wrap_content"
+            android:hint="Username"/>
+        <EditText
+            android:id="@+id/edt_pass_login"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            android:padding="5pt"
+            android:layout_width="120pt"
+            android:layout_height="wrap_content"
+            android:hint="Password"/>
+        <EditText
+            android:id="@+id/edt_code_login"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            android:padding="5pt"
+            android:layout_width="120pt"
+            android:layout_height="wrap_content"
+            android:hint="Code User"/>
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:text="Login"
+            android:layout_gravity="center"
+            android:layout_width="90pt"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#000"
+                android:text="Belum Memiliki akun"/>
+
+            <TextView
+                android:onClick="GoToRegister"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="#F3F3F3"
+                android:text="   Daftar Disini"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
